@@ -8,3 +8,6 @@ The host, generally the browser, sends a TCP SYNchronize packet to the server. T
 This handshake step happens after a DNS lookup and before the TLS handshake, when creating a secure connection. The connection can be terminated independently by each side of the connection via a four-way handshake.
 
 > You type in a URL for the first time in a browser address bar -> DNS Lookup -> TCP Handshake-> TLS Handshake -> Connection between your browser and server established 🎉
+<hr>
+
+![A Diagram describing the order of actions prior to connection](https://developer.mozilla.org/en-US/docs/Web/Performance/How_browsers_work/ssl.jpg)
