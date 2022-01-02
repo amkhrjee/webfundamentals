@@ -4,3 +4,4 @@
 
 All modern browsers support the TLS protocol, requiring the server to provide a valid digital certificate confirming its identity in order to establish a secure connection. It is possible for both the client and server to mutually authenticate each other, if both parties provide their own individual digital certificates.
 
+> HTTPS = HTTP + TLS/SSL handshake 
