@@ -54,3 +54,6 @@ The last step is painting the pixels to the screen. Once the render tree is crea
 ## Optimizing for CRP 
 Improve page load speed by prioritizing which resources get loaded, controlling the order in which they are loaded, and reducing the file sizes of those resources. Performance tips include 1) minimizing the number of critical resources by deferring their download, marking them as async, or eliminating them altogether, 2) optimizing the number of requests required along with the file size of each request, and 3) optimizing the order in which critical resources are loaded by prioritizing the downloading critical assets, shorten the critical path length.
 
+## Read More 
+- [CSS performance optimization
+](https://developer.mozilla.org/en-US/docs/Learn/Performance/CSS)
