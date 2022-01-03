@@ -48,3 +48,9 @@ Layout performance is impacted by the DOM -- the greater the number of nodes, th
 
 To reduce the frequency and duration of layout events, batch updates and avoid animating box model properties.
 
+## Paint 
+The last step is painting the pixels to the screen. Once the render tree is created and layout occurs, the pixels can be painted to the screen. Onload, the entire screen is painted. After that, only impacted areas of the screen will be repainted, as browsers are optimized to repaint the minimum area required. Paint time depends on what kind of updates are being applied to the render tree. While painting is a very fast process, and therefore likely not the most impactful place to focus on in improving performance, it is important to remember to allow for both layout and re-paint times when measuring how long an animation frame may take. The styles applied to each node increase the paint time, but removing style that increases the paint by 0.001ms may not give you the biggest bang for your optimization buck. Remember to measure first. Then you can determine whether it should be an optimization priority.
+
+## Optimizing for CRP 
+Improve page load speed by prioritizing which resources get loaded, controlling the order in which they are loaded, and reducing the file sizes of those resources. Performance tips include 1) minimizing the number of critical resources by deferring their download, marking them as async, or eliminating them altogether, 2) optimizing the number of requests required along with the file size of each request, and 3) optimizing the order in which critical resources are loaded by prioritizing the downloading critical assets, shorten the critical path length.
+
